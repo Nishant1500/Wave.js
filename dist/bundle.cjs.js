@@ -249,7 +249,7 @@ function fromStream(stream, canvas_id, options = {}) {
         self.sources[stream.toString()].animation = self.current_stream.animation;
         analyser.getByteFrequencyData(self.current_stream.data);
 
-        self.visualize(self.current_stream.data, self.current_stream.id, self.current_stream.options);
+        self.visualize(self.current_stream.data, self.current_stream.id, self.current_stream.options, 1);
     }
 
     this.current_stream.loop = renderFrame;
